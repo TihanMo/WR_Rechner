@@ -1,10 +1,7 @@
 # Author Tihan Morrol (credits to Ael Banyard)
 # Berechnung von Renditen anhand von verschiedenem Eigenkapital anhand verschiedener verzinsung des Fremdkapitals
-print("============================")
-print("Fremdkapital auf 5% verzinst")
-print()
+
 ek = [90, 80, 70, 60, 50, 40, 30, 20, 10]
-fkzins = 0.05
 roi = 0.12
 
 def gewinn(x):
@@ -16,7 +13,14 @@ def roeCalc():
     for x in ek:
         ge = gewinn(x)
         roe = ge/x
-        print("Bei Gewinn: "+ ge+", ist RoE: " +roe)
+        print("Bei Gewinn: "+str(ge) +", ist RoE: " + str(roe))
+
+print("============================")
+print("Fremdkapital auf 5% verzinst")
+print()
+fkzins = 0.05
+
+roeCalc()
 
 
 print("============================")
