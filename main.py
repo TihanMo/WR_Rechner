@@ -12,10 +12,11 @@ def gewinn(x):
     g = (roi*100)-(fk*fkzins)
     return g
 
-for x in ek:
-    ge = gewinn(x)
-    roe = ge/x
-    print(roe)
+def roeCalc():
+    for x in ek:
+        ge = gewinn(x)
+        roe = ge/x
+        print("Bei Gewinn: "+ ge+", ist RoE: " +roe)
 
 
 print("============================")
@@ -23,20 +24,14 @@ print("Fremdkapital auf 10% verzinst")
 print()
 fkzins = 0.1
 
-for x in ek:
-    ge = gewinn(x)
-    roe = ge/x
-    print(roe)
+roeCalc()
 
 print("============================")
 print("Fremdkapital auf 15% verzinst")
 print()
 fkzins = 0.15
 
-for x in ek:
-    ge = gewinn(x)
-    roe = ge / x
-    print(roe)
+roeCalc()
 
 print("============================")
 print("Fremdkapital mit Eingabe verzinst")
@@ -44,7 +39,4 @@ print()
 print("Geben sie den Zinssatz an (ganze Zahl): ")
 fkzins = int(input())/100
 
-for x in ek:
-    ge = gewinn(x)
-    roe = ge / x
-    print(roe)
+roeCalc()
