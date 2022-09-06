@@ -3,7 +3,7 @@
 from tkinter import *
 
 # Config of Window
-root = Tk(className=" WR - Ael Banyard")
+root = Tk(className=" WR - Ael Banyard / Tihan Morrol")
 root.geometry("500x800")
 title = StringVar()
 label = Label(root, textvariable=title, font=10)
