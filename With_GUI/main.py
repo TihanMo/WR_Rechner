@@ -3,11 +3,12 @@
 from tkinter import *
 
 # Config of Window
-root = Tk(className=" WR - Ael Banyard / Tihan Morrol")
+root = Tk(className=" WR - Ael & Tihan")
 root.geometry("500x800")
 title = StringVar()
 label = Label(root, textvariable=title, font=10)
 title.set("WR Rechner für Renditen")
+
 
 # Set Vars
 ek = [90, 80, 70, 60, 50, 40, 30, 20, 10]

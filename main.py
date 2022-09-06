@@ -1,6 +1,5 @@
 # Author Tihan Morrol (credits to Ael Banyard)
 # Berechnung von Renditen anhand von verschiedenem Eigenkapital anhand verschiedener verzinsung des Fremdkapitals
-
 ek = [90, 80, 70, 60, 50, 40, 30, 20, 10]
 roi = 0.12
 
